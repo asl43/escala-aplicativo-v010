@@ -1246,7 +1246,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 // ===== SISTEMA DE TOKEN (Google Sheets) =====
 // ▶ Cole aqui a URL do seu Google Apps Script após configurar
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby-AOM11rw-VmgaVXJnoxrS5juvtN8Tv3Fe8kvXVve5vPcCHU26EveARaczYmY1FsnMXg/exec';
+const APPS_SCRIPT_URL = 'COLE_SUA_URL_AQUI';
 
 // Re-validar contra o servidor a cada X horas (0 = sempre online)
 const HORAS_CACHE = 24;
@@ -1258,7 +1258,7 @@ async function verificarToken(){
   const token = inp.value.trim().toUpperCase().replace(/\s+/g,'');
 
   if(!token){ inp.style.borderColor='#ef4444'; return; }
-  if(APPS_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycby-AOM11rw-VmgaVXJnoxrS5juvtN8Tv3Fe8kvXVve5vPcCHU26EveARaczYmY1FsnMXg/exec'){
+  if(APPS_SCRIPT_URL === 'COLE_SUA_URL_AQUI'){
     mostrarErroToken('⚠️ URL do Apps Script não configurada.'); return;
   }
 
